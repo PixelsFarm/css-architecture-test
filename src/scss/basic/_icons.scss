@@ -1,0 +1,34 @@
+@font-face {
+	font-family: "icon";
+	src: url('../../build/assets/fonts/icon.eot');
+	src: url('../../build/assets/fonts/icon.eot?#iefix') format('eot'),
+		url('../../build/assets/fonts/icon.woff2') format('woff2'),
+		url('../../build/assets/fonts/icon.woff') format('woff'),
+		url('../../build/assets/fonts/icon.ttf') format('truetype'),
+		url('../../build/assets/fonts/icon.svg#icon') format('svg');
+}
+
+.icon:before {
+	font-family: "icon";
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: normal;
+	/* speak: none; only necessary if not using the private unicode range (firstGlyph option) */
+	text-decoration: none;
+	text-transform: none;
+}
+
+
+.icon-ic-mail:before {
+	content: "\E001";
+}
+
+.icon-mail:before {
+	content: "\E002";
+}
+
+.icon-twitter:before {
+	content: "\E003";
+}

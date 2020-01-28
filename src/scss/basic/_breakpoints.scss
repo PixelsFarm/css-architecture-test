@@ -1,0 +1,14 @@
+// =======================================================
+// Breakpoints propios
+// -------------------------------------------------------
+// Utilizamos $portable para hacer tanto mobile como 
+// tablet idénticos para ahorrar tiempo maquetando en RWD.
+// -------------------------------------------------------
+
+
+$portable:   "(max-width: 991px)" !default;
+$ipad:       "(min-width: 768px)" !default;;
+$desktop-xs: "(min-width: 992px)" !default;
+$desktop-md: "(min-width: 1200px)" !default;
+$desktop-lg: "(min-width: 1400px)" !default;
+

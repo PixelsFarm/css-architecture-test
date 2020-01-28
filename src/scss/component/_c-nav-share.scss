@@ -1,0 +1,34 @@
+// Component | Share navigation
+
+.c-nav-share {
+	display: flex;
+	align-items: flex-end;
+	@include reset(ul);
+
+	&__item {
+		
+		+ .c-nav-share__item {
+			margin-left: 10px;
+		} 
+
+		&--mail {
+
+			img {
+				margin-bottom: -1px;
+			}
+		}
+
+		&--twitter {
+
+			a {
+				@include font-ico-size(3);
+			}
+		}
+
+		a {
+			@include font-size(0);
+			color: $color-white;
+			text-decoration: none;
+		}
+	}
+}

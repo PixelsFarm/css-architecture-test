@@ -1,0 +1,17 @@
+// Component | Input email
+
+.c-input-email {
+	font-family: $f-segoe-light;
+	color: $color-grey-cool;
+	@include padding(null 20px);
+	border: none;
+	border-radius: 8px 0 0 8px;
+
+	@media #{$portable} {
+		@include font-size(1.6);
+	}
+
+	@media #{$desktop-xs} {
+		@include font-size(2.0);
+	}
+}

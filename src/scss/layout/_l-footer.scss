@@ -1,0 +1,13 @@
+// Layout | Footer
+
+$height: calc(100vh - 759px);
+
+.l-footer {
+	@include sizing(100%, $height);
+	margin-top: -51px;
+	background-color: $color-white;
+
+	@media #{$portable} {
+		display: none;
+	}
+}

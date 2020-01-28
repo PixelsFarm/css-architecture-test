@@ -1,0 +1,29 @@
+// Module | Email Form | Form to send email
+
+$width-button:          120px;
+$width-button-portable: 92px;
+$width-input:           calc(100% - #{$width-button-portable - ($gutter-portable * 2)});
+
+.m-email-form {
+	display: flex;
+	flex-direction: row;
+
+	@media #{$portable} {
+		@include padding(null 3px);
+	}
+
+	.c-input-email {
+
+		@media #{$portable} {
+			@include sizing($width-input, 43px);
+		}
+
+		@media #{$desktop-xs} {
+			@include sizing(259px, 53px);
+		}
+	}
+
+	.c-button-submit {
+		width: $width-button;
+	}
+}

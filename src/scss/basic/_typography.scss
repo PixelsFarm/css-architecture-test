@@ -1,0 +1,48 @@
+// Todo lo relacionado con las tipos
+
+// fonts import
+	
+// segoe
+
+	// light
+	@include font-face(
+		"Segoe light",
+	  	"../assets/fonts/SegoeUI-Light", 
+	  	("eot", "ttf", "woff", "svg")
+	) {
+	  font-style: normal;
+	  font-weight: 300;
+	}
+
+	// normal
+	@include font-face(
+		"Segoe",
+	  	"../assets/fonts/SegoeUI", 
+	  	("eot", "ttf", "woff", "svg")
+	) {
+	  font-style: normal;
+	  font-weight: 300;
+	}
+
+	// bold
+	@include font-face(
+		"Segoe bold",
+	  	"../assets/fonts/SegoeUI-Bold", 
+	  	("eot", "ttf", "woff", "svg")
+	) {
+	  font-style: normal;
+	  font-weight: 700;
+	}
+
+
+// fonts family
+$f-segoe-light:  'Segoe light', sans-serif;
+$f-segoe-normal: 'Segoe', sans-serif;
+$f-segoe-bold:   'Segoe bold', sans-serif;
+
+// font weight 
+$f-bold      : 700;
+$f-semibold  : 600;
+$f-medium    : 500;
+$f-normal    : 400;
+$f-light     : 300;

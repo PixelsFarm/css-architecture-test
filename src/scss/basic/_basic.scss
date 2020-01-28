@@ -1,0 +1,48 @@
+// =======
+// general
+// -------
+html {
+	font-size: 62.5%;
+	min-height: 100vh;
+}
+
+body {
+    overflow-x: hidden;
+	position: relative;
+	min-height: 100vh;
+	font-family: $f-segoe-normal;
+	@include font-size(1.6);
+	color: $color-text;
+	line-height: 21px;
+	margin-top: 0;
+	background-color: $color-white;
+    -webkit-font-smoothing: antialiased;
+    margin: 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+
+    @media #{$portable} {
+    	display: flex;
+    	align-items: center;
+		background-image: url('../assets/img/bck-portable.svg');	       
+	}
+
+    @media #{$desktop-xs} {
+    	display: block;
+    	background-image: url('../assets/img/bck-desktop.svg');
+    }
+}
+
+h1, p {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	@include margin(null auto);
+
+	@media #{$desktop-xs} {
+		max-width: 1200px;
+	}
+}

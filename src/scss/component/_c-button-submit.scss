@@ -1,0 +1,12 @@
+// Component | Submit button email form
+
+.c-button-submit {
+	font-family: $f-segoe-bold;
+	@include font-size(1.4);
+	color: $color-white;
+	text-transform: uppercase;
+	letter-spacing: 2.8px;
+	border: none;
+	border-radius: 0 8px 8px 0;
+	background-color: $color-red-tomato;
+}

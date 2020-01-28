@@ -1,0 +1,120 @@
+// Layout | Content
+
+.l-content {
+	display: flex;
+
+	@media #{$portable} {
+		flex-direction: column;
+		@include padding(0 $gutter-portable 0 $gutter-portable);
+	}
+
+	@media #{$desktop-xs} {
+		flex-direction: row;
+	}	
+
+	&__left {
+
+		@media #{$portable} {
+			display: none;
+		}
+
+		@media #{$desktop-xs} {
+			margin-top: -9px;
+			padding-left: 73px;
+		}
+	}
+
+	&__right {
+
+		@media #{$portable} {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+
+		@media #{$desktop-xs} {
+			@include padding(80px 65px null 65px);
+		}
+
+		@media #{$desktop-md} {
+			padding-left: 165px;
+		}
+
+		@media #{$desktop-lg} {
+			padding-right: 0;
+		}
+	}
+
+	&__title {
+		@include font-size(0);
+
+		@media #{$portable} {
+			text-align: center;
+			margin-bottom: 17px;
+		}
+
+		@media #{$desktop-xs} {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__subtitle {
+		font-family: $f-segoe-light;
+		color: $color-white;
+  		letter-spacing: normal;
+
+  		@media #{$portable} {
+			@include font-size(2.4);
+			text-align: center;
+			line-height: 1.17;
+			letter-spacing: .2px;
+			@include margin(21px null 11px null);
+		}
+
+		@media #{$desktop-xs} {
+			@include font-size(4.8);
+			line-height: 1.21;
+	  		margin-bottom: 29px;
+		}	
+  	}
+
+  	&__description {
+		opacity: .7;
+		font-family: $f-segoe-light;
+		color: rgba($color-white, .87);
+
+		@media #{$portable} {
+			@include font-size(1.6);
+			text-align: center;
+			line-height: 1.5;
+			margin-bottom: 24px;
+		}
+
+		@media #{$desktop-xs} {
+			@include font-size(2.4);
+			line-height: 1.42;
+			margin-bottom: 48px;
+		}
+  	}
+
+	&__phone {
+
+		&--portable {
+
+			@media #{$portable} {
+				margin-left: 22px;
+			}
+
+			@media #{$desktop-xs} {
+				display: none;
+			}
+		}
+
+		&--desktop {
+
+			@media #{$portable} {
+				display: none;
+			}
+		}
+	}
+}
